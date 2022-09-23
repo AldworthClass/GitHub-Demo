@@ -4,11 +4,25 @@
     {
         static void Main(string[] args)
         {
-            string name;
-            Console.WriteLine("Name Please:");
-            name = Console.ReadLine();
+            int temperature;
+            Console.Write("What is the tempp in celsius: ");
+            temperature = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Hello, {name}");
+            if (temperature <= 0)
+                Console.WriteLine("Its freezing!");
+
+            else if (temperature <= 15)
+                Console.WriteLine("Its cool");
+
+            else if (temperature <= 25)
+                Console.WriteLine("Its Warm");
+            else
+                Console.WriteLine("Its Hot");
+                
+            
+
+
+
         }
     }
 }
